@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #ECECEC;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*---------------------BARRA DE NAVEGACION---------------------*/
+nav{
+	background: #FFF;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 0 0px 20px 0px rgba(0,0,0,.25);
+	text-align: center;
+}
+
+.nav-bar{
+	list-style: none;
+}
+
+.nav-bar li{
+	text-align: center;
+	display: inline-block;
+}
+
+.nav-bar li a{
+	color: #282828;
+	padding: 15px;
+	text-decoration: none;
+	display: block;
+	transition: 0.2s;
+}
+
+.nav-bar li a:hover{
+	background: transparent;
+	border-bottom: 3px solid #282828; 
+}
+
+.home{
+	border-bottom: 3px solid #282828; 
+}
+
+.logo{
+	color: #282828;
+	border: 1px solid #282828;
+	margin-top: 12px;
+	margin-left: 30px;
+	margin-right: 50px;
+	padding: 0px 20px;
+}
+
+.nombre-usuario{
+	background: transparent;
+	color: #282828;
+	/*margin-left: 480px;*/
+	padding: 3px 10px;
+	border: 1px solid #282828;
+	border-radius: 10px;
+}
+
+.nombre-usuario img{
+	position: relative;
+	top: 0.7px;
+	margin-right: 8px;
+}
+
+.btn-cerrar-sesion{
+	background: #F5543B;
+	color: #FFF;
+	padding: 3px 10px;
+	margin-left: 18px;
+	border: 1px solid #F5543B; 
+	border-radius: 25px;
+	font-size: 16px;
+	transition: 0.2s;
+}
+
+.btn-cerrar-sesion:hover{
+	background: #FF735D;
+	cursor: pointer;
+}
+
+.btn-cerrar-sesion:focus{
+	outline: none;
+}
+
+/*---------------------PRINCIPAL (PELICULAS)---------------------*/
+.movie-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 70px;
+}
+
+.movie{
+	background: transparent;
+	flex-basis: 15%;
+	text-align: center;
+}
+
+.movie .thumb img{
+	width: 100%;
+}
+
+.movie .mv-title{
+	width: 100%;
+	border: 1px solid #282828;
+	border-radius: 0 0 15px 15px;
+	padding: 5px;
+}
+
+.movie .mv-title h2{
+	font-size: 15px;
+	font-weight: 300;
+}
+
+/*---------------------PAGINACION---------------------*/
+.pagination {
+	background-color: none;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*---------------------FOOTER---------------------*/
+footer{
+	background-image: linear-gradient(45deg,#454C54,#3C4146);
+	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	box-shadow: 0 5px 20px 0px rgba(0,0,0,.25);
+  	border-top: 1px solid black;
+}
+
+footer .copyright{
+	color: #FFF;
+	text-align: center;
+}
+
+footer .copyright p{
+	padding: 10px 0;
+	font-size: 13px;
+}
+
+/*----------------------TICKETS----------------------*/
+.formulario {
+	margin-left: 100px;
+}
+
+.lista {
+	margin-left: 70px;
+}
